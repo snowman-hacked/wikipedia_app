@@ -44,7 +44,7 @@ wikipedia_app/
 ### 1. 프로젝트 클론
 
 ```bash
-git clone https://github.com/your-username/wikipedia-django-app.git
+git clone https://github.com/snowman-hacked/wikipedia_app.git
 cd wikipedia-django-app
 ```
 
