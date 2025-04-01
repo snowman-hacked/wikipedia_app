@@ -48,22 +48,29 @@ git clone https://github.com/your-username/wikipedia-django-app.git
 cd wikipedia-django-app
 ```
 
-### 2. 필요한 라이브러리 설치
+### 2. 가상환경 생성(선택사항)
+
+```bash
+python -m venv venv
+source env/bin/activate
+```
+
+### 3. 필요한 라이브러리 설치
 
 ```bash
 pip install django wikipedia
 ```
 
-### 3. 마이그레이션 적용
+### 4. 마이그레이션 적용
 
 ```bash
 python manage.py migrate
 ```
 
-### 4. 서버 실행
+### 5. 서버 실행
 
 ```bash
-python manage.py runserver
+python manage.py runserver 0.0.0.0:8000
 ```
 
 이후 브라우저에서 [http://localhost:8000](http://localhost:8000) 접속
