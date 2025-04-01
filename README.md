@@ -2,6 +2,10 @@
 
 이 프로젝트는 Django와 `wikipedia` 라이브러리를 활용하여 만든 간단한 위키백과 검색 웹앱입니다. 사용자가 검색어를 입력하면 위키백과의 요약 정보를 제공하며, 모호한 검색어(예: "Apple")의 경우 선택지를 제시해 정확한 검색을 유도합니다.
 
+### 예시 이미지
+![스크린샷 2025-04-01 131101](https://github.com/user-attachments/assets/f81e3f38-6aae-468e-8875-7174dfc4594a)
+![스크린샷 2025-04-01 131117](https://github.com/user-attachments/assets/34d18f43-1979-41fb-a664-12b9555abfd8)
+
 ---
 
 ## 주요 기능
