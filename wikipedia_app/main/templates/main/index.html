@@ -1,0 +1,29 @@
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="search" placeholder="Search Wikipedia" value="{{ search }}">
+    <button type="submit">Search</button>
+</form>
+
+{% if result %}
+    <h2>Result for "{{ search }}"</h2>
+    <p>{{ result }}</p>
+{% endif %}
+
+{% if options %}
+    <h3>"{{ search }}"이(가) 여러 의미를 가질 수 있습니다. 원하는 항목을 선택해주세요:</h3>
+    <ul>
+        {% for option in options %}
+            <li>
+                <form method="post" style="display:inline;">
+                    {% csrf_token %}
+                    <input type="hidden" name="search" value="{{ option }}">
+                    <button type="submit">{{ option }}</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{% if error %}
+    <p style="color:red;">{{ error }}</p>
+{% endif %}
